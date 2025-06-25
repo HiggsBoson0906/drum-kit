@@ -66,6 +66,7 @@ background-image: url(images/kick.png);
   background-position: center;
 }
 
+
 .set {
   margin: 10% auto;
 }
@@ -77,6 +78,7 @@ background-image: url(images/kick.png);
   transform: scale(0.9);
   transition: all 0.1s ease-in-out;
 }
+
 
 .red {
   color: red;
@@ -96,6 +98,15 @@ background-image: url(images/kick.png);
   width: 150px;
   height: 150px;
   text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
   margin: 10px;
   background-color: white;
+}
+.space{
+  font-size: 2.6rem;
+  background-image: url(images/download.jpeg);
+ background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }

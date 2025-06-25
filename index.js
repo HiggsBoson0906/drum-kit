@@ -38,12 +38,17 @@ function makeSound(key){
             var audio = new Audio('sounds/kick-bass.mp3');
             audio.play();
             break;
+        case ' ':
+            var audio = new Audio('sounds/drum-roll.mp3');
+            audio.play();
+            break;
         default:
             console.log(buttonInnerHTML);
     }
 }
 function buttonAnimation(key){
-    var activeButton = document.querySelector('.' + key);
+    let buttonClass = (key === ' ') ? 'space' : key;
+    var activeButton = document.querySelector('.' + buttonClass);
     activeButton.classList.add('pressed');
     setTimeout(function(){
         activeButton.classList.remove('pressed');
