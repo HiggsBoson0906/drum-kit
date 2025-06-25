@@ -42,12 +42,16 @@ function makeSound(key){
             var audio = new Audio('sounds/drum-roll.mp3');
             audio.play();
             break;
+        case 'Space':
+            var audio = new Audio('sounds/drum-roll.mp3');
+            audio.play();
+            break
         default:
             console.log(buttonInnerHTML);
     }
 }
 function buttonAnimation(key){
-    let buttonClass = (key === ' ') ? 'space' : key;
+    let buttonClass = (key === ' ') ? 'Space' : key;
     var activeButton = document.querySelector('.' + buttonClass);
     activeButton.classList.add('pressed');
     setTimeout(function(){
