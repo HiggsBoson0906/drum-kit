@@ -70,14 +70,12 @@ background-image: url(images/kick.png);
   margin: 10% auto;
 }
 
-.game-over {
-  background-color: red;
-  opacity: 0.8;
-}
-
 .pressed {
   box-shadow: 0 3px 4px 0 #DBEDF3;
   opacity: 0.5;
+  color:white;
+  transform: scale(0.9);
+  transition: all 0.1s ease-in-out;
 }
 
 .red {
